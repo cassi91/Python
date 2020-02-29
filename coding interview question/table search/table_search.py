@@ -25,7 +25,7 @@ def find_target(a:list, b:list, target:int):
         if abs(tmp_diff) < smallest_diff:
             # 新的差值较小, 重置查询结果
             result = []
-            smallest_diff = tmp_diff
+            smallest_diff = abs(tmp_diff)
             result.append((np_a[i], np_b[j]))
         elif tmp_diff == smallest_diff:
             result.append((np_a[i], np_b[j]))
